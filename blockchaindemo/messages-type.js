@@ -5,5 +5,6 @@ const messageType = {
     RECEIVE_LATEST_BLOCKCHAIN: 3, // 响应整个区块链（将整个区块链发送给请求方）
     HANDSHAKE: 4, // 握手消息，交换节点的监听端口信息
 }
-  
+
+
 module.exports = messageType;

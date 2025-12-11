@@ -1,4 +1,4 @@
-const messageType = require('./messages-type');
+const messageType = require('./messages-type.js');
 const {
     REQUEST_LATEST_BLOCK,
     RECEIVE_LATEST_BLOCK,
@@ -13,7 +13,7 @@ class Messages {
             type: REQUEST_LATEST_BLOCK,
         };
     }
-    // 响应最新区块的消息函数（将最新的区块发送给请求方）
+    // 相应最新区块的消息函数（将最新的区块发送给请求方）
     static sendLatestBlock(block) {
         return {
             type: RECEIVE_LATEST_BLOCK,
